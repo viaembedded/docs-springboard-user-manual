@@ -47,7 +47,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Springboard User Manual'
-copyright = '2014, VIA'
+copyright = '2013, VIA'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -96,6 +96,7 @@ pygments_style = 'sphinx'
 # If true, keep warnings as "system message" paragraphs in the built documents.
 #keep_warnings = False
 
+todo_include_todos = True
 
 # -- Options for HTML output ----------------------------------------------
 
