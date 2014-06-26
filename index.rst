@@ -24,6 +24,11 @@ our documentation engine: PDF, epub, ...
 
    introduction.rst
    overview.rst
+   io_interface.rst
+   jumpers.rst
+   hardware_installation.rst
+   drivers.rst
+   appendix.rst
 
 
 Indices and tables
