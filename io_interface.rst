@@ -15,6 +15,27 @@ coastline.
 External I/O Ports
 ------------------
 
+.. _figure-external-io:
+.. figure:: images/external_io.*
+   :align: center
+   :alt: External I/O ports
+
+   External I/O ports
+
+Layout diagram description table of external rear I/O ports:
+
+==== ========================
+Item Description
+==== ========================
+1    CN12: DC-In jack
+2    SD1: Micro SD card slot
+3    USB2: Mini USB 2.0 port 2 (type AB port)
+4    USB2: Mini USB 2.0 port 1 (type AB port)
+5    HDMI1: Mini HDMI® port
+6    LAN1: RJ-45 (Fast Ethernet) LAN port
+==== ========================
+
+
 DC-In Jack
 ~~~~~~~~~~
 
@@ -23,11 +44,58 @@ adjacent to the Micro SD slot. The power connector carriers +12VDC ~ +24VDC
 external power input. The specifications and pinout of the power connector
 are shown below.
 
+.. _figure-dc-in-jack:
+.. figure:: images/dc-in_jack.*
+   :align: center
+   :alt: DC-In jack diagram
+
+   DC-In jack diagram
+
++------------------------------+
+|Physical Specifications       |
++=================+============+
+|Outer Diameter   |3.7 mm      |
++-----------------+------------+
+|Inner Diameter   |1.3 mm      |
++-----------------+------------+
+|Barrel Depth     |8.25 mm     |
++-----------------+------------+
+
++-----------------+------------+
+|Electrical Specifications     |
++=================+============+
+|Input Voltage    |+12V ~ +24V |
++-----------------+------------+
+
+
 Micro SD Card Slot
 ~~~~~~~~~~~~~~~~~~
 
 The Micro SD card slot is located on the rear I/O panel, it offers expandable
 storage.
+
+.. _figure-sd-card:
+.. figure:: images/sd_card.*
+   :align: center
+   :alt: Micro SD Card slot diagram
+
+   Micro SD Card slot diagram
+
+Micro SD Card slot pinout:
+
+=== ===========
+Pin Signal
+=== ===========
+1   SD0DATA2
+2   SD0DATA3
+3   SD0CMD
+4   VDD (3.3V)
+5   SD0CLK
+6   GND
+7   SD0DATA0
+8   SD0DATA1
+9   SD0_CD
+=== ===========
 
 Mini USB 2.0 Port
 ~~~~~~~~~~~~~~~~~
@@ -38,6 +106,25 @@ capabilities for external devices and it complies with USB UHCI, rev. 2.0. Each
 Mini USB port uses the USB Type AB receptacle port connector. The pinout of
 the typical Mini USB port is shown below.
 
+.. _figure-mini-usb:
+.. figure:: images/mini_usb.*
+   :align: center
+   :alt: Mini USB port diagram
+
+   Mini USB port diagram
+
+Mini USB 2.0 port pinout:
+
+=== ========= === =========
+Pin Signal    Pin Signal
+=== ========= === =========
+1   VCC (+5V) 1   VCC (+5V)
+2   USBH1-    2   USBH2-
+3   USBH1+    3   USBH2+
+4   ID (GND)  4   ID (GND)
+5   GND       5   GND
+=== ========= === =========
+
 Mini HDMI® Port
 ~~~~~~~~~~~~~~~
 
@@ -46,6 +133,31 @@ connector as defined in the HDMI specification. The Mini HDMI port is for
 connecting to HDMI displays. The pinout of the Mini HDMI port is shown
 below.
 
+.. _figure-hdmi:
+.. figure:: images/hdmi.*
+   :align: center
+   :alt: Mini HDMI® port diagram
+
+   Mini HDMI® port diagram
+
+Mini HDMI® port pinout:
+
+=== ========= === =========
+Pin Signal    Pin Signal
+=== ========= === =========
+1   GND       2   LCD1DO2+
+3   LCD1DO2-  4   GND
+5   LCD1DO1+  6   LCD1DO1-
+7   GND       8   LCD1DO0+
+9   LCD1DO0-  10  GND
+11  LCD1CLK+  12  LCD1CLK-
+13  GND       14  HDMI_CECIN
+15  DDCSCL    16  DDCSDA
+17  ✗         18  VCC_5V
+19  HPD             
+=== ========= === =========
+
+
 RJ-45 LAN port (Fast Ethernet)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -53,6 +165,45 @@ The integrated 8-pin Fast Ethernet port is using an 8 Position 8 Contact (8P8C)
 receptacle connector (commonly referred to as RJ-45). The Fast Ethernet ports
 are controlled by VIA VT6113 10/100 Base-TX PHY chip controller. The
 pinout of the Fast Ethernet port is shown below.
+
+.. _figure-fast-ethernet:
+.. figure:: images/fast_ethernet.*
+   :align: center
+   :alt: Fast Ethernet port diagram
+
+   Fast Ethernet port diagram
+
+Fast Ethernet port pinout :
+
+==== =========
+Pin  Signal
+==== =========
+1    TD+
+2    TD-
+3    RD+
+4    REGOUT
+5    REGOUT
+6    RD-
+7    GND
+8    GND
+==== =========
+
+The RJ-45 port has two individual LED indicators located on the front side to
+show its Active/Link status and Speed status.
+
+Fast Ethernet LED color definition:
+
++--------------+------------------------------------+----------------------------------+
+|              |Link LED                            |Active LED                        |
+|              |(Left LED on RJ-45 connector)       |(Right LED on RJ-45 connector)    |
++==============+====================================+==================================+
+|Link Off      |Off                                 |Off                               |
++--------------+------------------------------------+----------------------------------+
+|Speed_10Mbit  |The LED is always On in dark color  |Flash in Yellow or Orange color   |
++--------------+------------------------------------+----------------------------------+
+|Speed_100Mbit |The LED is always On in Red color   |Flash in Yellow or Orange color   |
++--------------+------------------------------------+----------------------------------+
+
 
 Onboard Connectors
 ------------------
@@ -66,6 +217,22 @@ connector in addition to the DC-In jack on the rear IO panel. This provides
 two methods for delivering +12VDC ~ +24VDC to the mainboard. The pinout of
 the DC-In connector is shown below.
 
+.. _figure-dc-in:
+.. figure:: images/dc-in.*
+   :align: center
+   :alt: DC-In connector diagram
+
+   DC-In connector diagram
+
+DC-In connector pinout:
+
+==== =========
+Pin  Signal
+==== =========
+1    +12VDC ~ +24VDC
+2    GND
+==== =========
+
 SIM Card Slot
 ~~~~~~~~~~~~~
 
@@ -76,6 +243,28 @@ requires a 3G module installed in the Mini Card expansion slot to enable the
 designed only for 3G module without built-in SIM card slot on it. The SIM
 card slot is labeled as "SIM1". The pinout of the slot is shown below.
 
+.. _figure-sim-slot:
+.. figure:: images/sim_slot.*
+   :align: center
+   :alt: SIM card slot diagram
+
+   SIM card slot diagram
+
+SIM card slot pinout:
+
+==== =============
+Pin  Signal
+==== =============
+1    USIM_VCC
+2    USIM_RST
+3    USIM_CLK
+4    ✗
+5    GND
+6    USIM_VPPSIM
+7    USIM_DATA
+==== =============
+
+
 Battery Charger Connector (Optional)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -83,6 +272,25 @@ The mainboard is equipped with an onboard battery charger connector used
 for connecting the external cable for charging a rechargeable battery. The
 battery charger connector is labeled as "CN3". The connector pinout is shown
 below.
+
+.. _figure-battery-charger:
+.. figure:: images/battery_charger.*
+   :align: center
+   :alt: Battery Charger connector diagram
+
+   Battery Charger connector diagram
+
+Battery charger pinout:
+
+==== =============
+Pin  Signal
+==== =============
+1    Voltage detect
+2    I2C0SCL
+3    I2C0SDA
+4    GND
+5    Temperature Detect
+==== =============
 
 RTC Battery Connector
 ~~~~~~~~~~~~~~~~~~~~~
@@ -92,6 +300,22 @@ connecting the external cable battery that provides power to the 32.768KHz
 crystal oscillator for Real Time Clock (RTC). The RTC battery connector is
 labeled as "BAT1". The connector pinout is shown below.
 
+.. _figure-rtc-connector:
+.. figure:: images/rtc_connector.*
+   :align: center
+   :alt: RTC Battery connector diagram
+
+   RTC Battery connector diagram
+
+RTC Battery connector pinout:
+
+==== =============
+Pin  Signal
+==== =============
+1    +VBAT
+2    GND
+==== =============
+
 Front Panel Pin Header
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -99,12 +323,54 @@ The front panel pin header block consists of 6 pins. It provides access to the
 system power LED, power switch and shut down switch. The front panel pin
 header is labeled as "CN7". The pinout of the pin header is shown below.
 
+.. _figure-front-panel:
+.. figure:: images/front_panel.*
+   :align: center
+   :alt: Front Panel pin header diagram
+
+   Front Panel pin header diagram
+
+Front Panel pin header pinout:
+
+==== ========== ==== ==========
+Pin  Signal     Pin  Signal
+==== ========== ==== ==========
+1    PWR_LED    2    GND
+3    PWRBTN-    4    GND
+5    RESET1     6    GND
+==== ========== ==== ==========
+
+.. note::
+
+   Although the signal name for pin#5 is "RESET1", its function is "shut down".
+
 GPIO and I²C Pin Header
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 The GPIO and I²C combination pin header block labeled as "CN9" is used for
 connecting the I²C device, and eight General Purpose Input and Output. The
 pinout of the combination pin header is shown below.
+
+.. _figure-gpio-i2c:
+.. figure:: images/gpio_i2c.*
+   :align: center
+   :alt: GPIO and I²C pin header diagram
+
+   GPIO and I²C pin header diagram
+
+GPIO and I²C pin header pinout:
+
+==== ========== ==== ==========
+Pin  Signal     Pin  Signal
+==== ========== ==== ==========
+1    VCC33      2    VCC_5V
+3    GND        4    VSUS33
+5    GPI20_CH   6    GPIO24_CH
+7    GPIO21     8    GPIO25
+9    GPIO_22    10   GPIO_26
+11   GPIO_23    12   GPIO_27
+13   I2C0SDA    14   I2C0SCL
+==== ========== ==== ==========
 
 SPI Flash Connector
 ~~~~~~~~~~~~~~~~~~~
