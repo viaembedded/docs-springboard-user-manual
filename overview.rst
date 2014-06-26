@@ -117,18 +117,20 @@ Layout Diagram
 --------------
 
 .. _figure-springboard-top:
-.. figure:: _static/images/springboard_top.*
+.. figure:: images/springboard_top.*
    :align: center
    :alt: Springboard top view
 
    Layout diagram of the VAB-600 Springboard, top view
 
 .. _figure-springboard-bottom:
-.. figure:: _static/images/springboard_bottom.*
+.. figure:: images/springboard_bottom.*
    :align: center
    :alt: Springboard bottom view
 
    Layout diagram of the VAB-600 Springboard, bottom view
+
+Layout diagram description table of VAB-600 mainboard:
 
 ==== ========================
 Item Description
@@ -159,14 +161,14 @@ Product Dimensions
 ------------------
 
 .. _figure-springboard-dimensions-top:
-.. figure:: _static/images/springboard_dimensions_top.*
+.. figure:: images/springboard_dimensions_top.*
    :align: center
    :alt: Mounting holes and dimensions of the VAB-600, top view
 
    Mounting holes and dimensions of the VAB-600, top view
 
 .. _figure-springboard-dimensions-back:
-.. figure:: _static/images/springboard_dimensions_back.*
+.. figure:: images/springboard_dimensions_back.*
    :align: center
    :alt: Mounting holes and dimensions of the VAB-600, back view
 
@@ -177,14 +179,14 @@ Height Distribution
 -------------------
 
 .. _figure-springboard-height-top:
-.. figure:: _static/images/springboard_height_top.*
+.. figure:: images/springboard_height_top.*
    :align: center
    :alt: Height distribution of the VAB-600 mainboard, top
 
    Height distribution of the VAB-600 mainboard, top
 
 .. _figure-springboard-height-bottom:
-.. figure:: _static/images/springboard_height_bottom.*
+.. figure:: images/springboard_height_bottom.*
    :align: center
    :alt: Height distribution of the VAB-600 mainboard, bottom
 
