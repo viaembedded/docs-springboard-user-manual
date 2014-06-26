@@ -21,6 +21,8 @@ import os
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.insert(0, os.path.abspath('.'))
 
+sys.path.append(os.path.abspath('extensions'))
+
 # -- General configuration ------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
@@ -31,6 +33,7 @@ import os
 # ones.
 extensions = [
     'sphinx.ext.todo',
+    'numfig',
 ]
 
 # Add any paths that contain templates here, relative to this directory.

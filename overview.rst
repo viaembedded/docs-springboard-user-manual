@@ -116,20 +116,77 @@ Product Specification
 Layout Diagram
 --------------
 
-.. todo::
+.. _figure-springboard-top:
+.. figure:: _static/images/springboard_top.*
+   :align: center
+   :alt: Springboard top view
 
-   Add section.
+   Layout diagram of the VAB-600 Springboard, top view
+
+.. _figure-springboard-bottom:
+.. figure:: _static/images/springboard_bottom.*
+   :align: center
+   :alt: Springboard bottom view
+
+   Layout diagram of the VAB-600 Springboard, bottom view
+
+==== ========================
+Item Description
+==== ========================
+1    PWR2: DC-In connector
+2    SIM1: SIM card slot (used for 3G module without built-in SIM card slot)
+3    CN3: Battery Charger connector (optional)
+4    BAT1: RTC Battery connector
+5    JM3: Power On Select jumper
+6    CN7: Front Panel pin header
+7    CN9: GPIO/I²C pin header
+8    SPI1: SPI Interface connector
+9    CN11: USB connector (for WLAN USB module)
+10   COM2: COM connector 2
+11   COM1: COM connector 1
+12   CN8: Front Audio pin header
+13   CN2: Mini Card expansion slot (for USB connectivity 3G module)
+14   TS1: 4-Wire Resistive Touch Screen connector
+15   KPAD1: Key PAD connector
+16   CN1: CIR connector
+17   CN13: Digital Video Output (DVO) connector
+18   VM8950 Cortex A9 Single Core processor
+19   4GB eMMC Flash memory
+20   1GB DDR3 1066 DRAM memory
+==== ========================
 
 Product Dimensions
 ------------------
 
-.. todo::
+.. _figure-springboard-dimensions-top:
+.. figure:: _static/images/springboard_dimensions_top.*
+   :align: center
+   :alt: Mounting holes and dimensions of the VAB-600, top view
 
-   Add section.
+   Mounting holes and dimensions of the VAB-600, top view
+
+.. _figure-springboard-dimensions-back:
+.. figure:: _static/images/springboard_dimensions_back.*
+   :align: center
+   :alt: Mounting holes and dimensions of the VAB-600, back view
+
+   Mounting holes and dimensions of the VAB-600, back view
+
 
 Height Distribution
 -------------------
 
-.. todo::
+.. _figure-springboard-height-top:
+.. figure:: _static/images/springboard_height_top.*
+   :align: center
+   :alt: Height distribution of the VAB-600 mainboard, top
 
-   Add section.
+   Height distribution of the VAB-600 mainboard, top
+
+.. _figure-springboard-height-bottom:
+.. figure:: _static/images/springboard_height_bottom.*
+   :align: center
+   :alt: Height distribution of the VAB-600 mainboard, bottom
+
+   Height distribution of the VAB-600 mainboard, bottom
+
