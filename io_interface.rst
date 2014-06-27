@@ -8,10 +8,6 @@ The VIA VAB-600 has a wide selection of interfaces integrated into the board.
 It includes a selection of frequently used ports as part of the external I/O
 coastline.
 
-.. todo::
-   Add all sections.
-
-
 External I/O Ports
 ------------------
 
