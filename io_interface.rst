@@ -380,6 +380,28 @@ BIOS programming fixture, the SPI (Serial Peripheral Interface) flash connector
 can update the SPI flash ROM. The connector is labeled as "SPI1". The pinout
 of the connector is shown below.
 
+.. _figure-spi:
+.. figure:: images/spi.*
+   :align: center
+   :alt: SPI Flash connector diagram
+
+   SPI Flash connector diagram
+
+SPI Flash connector pinout:
+
+==== =================
+Pin  Signal
+==== =================
+1    ✗
+2    SFCS1 (Reserved)
+3    SFDO
+4    SFDI
+5    SFCLK
+6    SFCS0-
+7    GND
+8    VPROG_SP1 (3.3V)
+==== =================
+
 USB Connector
 ~~~~~~~~~~~~~
 
@@ -387,30 +409,259 @@ The mainboard includes one onboard USB connector designed for connecting
 the wireless LAN USB module. The connector is labeled as "CN11". The
 pinout of the connector is shown below.
 
+.. _figure-usb:
+.. figure:: images/usb.*
+   :align: center
+   :alt: USB connector diagram
+
+   USB connector diagram
+
+USB connector pinout:
+
+==== =================
+Pin  Signal
+==== =================
+1    +5V
+2    USBH3-
+3    USBH3+
+4    GND
+5    USB_WIFI_LED
+6    GPIO_4
+==== =================
+
 COM Connector
 ~~~~~~~~~~~~~
+
+There are two onboard COM connectors on the top side of the mainboard.
+The COM connectors labeled as "COM1" and "COM2" are used to attach
+additional COM port that supports Tx/Rx. The pinout of the COM connectors
+are shown below.
+
+.. _figure-com:
+.. figure:: images/com.*
+   :align: center
+   :alt: COM connector diagram
+
+   COM connector diagram
+
+COM connector pinout:
+
++--------------+--------------+
+| COM1         | COM2         |
++-----+--------+-----+--------+
+| Pin | Signal | Pin | Signal |
++=====+========+=====+========+
+|1    | TXD0   |1    | TXD2   |
++-----+--------+-----+--------+
+|2    | RXD0   |2    | RXD2   |
++-----+--------+-----+--------+
+|3    | GND    |3    | GND    |
++-----+--------+-----+--------+
+|4    | RTS0   |4    | RTS2   |
++-----+--------+-----+--------+
+|5    | CTS0   |5    | CTS2   |
++-----+--------+-----+--------+
 
 Front Audio Pin Header
 ~~~~~~~~~~~~~~~~~~~~~~
 
+The mainboard has a front audio pin header for connecting the Line-Out, Line-
+In and Mic-In jacks. The pin header is labeled as “CN8”. The pinout of the pin
+header is shown below.
+
+.. _figure-audio:
+.. figure:: images/audio.*
+   :align: center
+   :alt: Front audio pin header diagram
+
+   Front audio pin header diagram
+
+Front audio pin header pinout:
+
+==== ========== ==== ==========
+Pin  Signal     Pin  Signal
+==== ========== ==== ==========
+1    LINEIN_R   2    GND
+3    LINEIN_L   4    MICIN1
+5    LINEOUT_R  6    MICIN2
+7    LINEOUT_L  8    HP_DET
+==== ========== ==== ==========
 
 Mini Card Slot
 ~~~~~~~~~~~~~~
 
+The VAB-600 mainboard is equipped with a Mini card expansion slot labeled
+as "CN2". The Mini card slot is used to attach the USB connectivity 3G module
+to provide 3G function. The pinout of the slot is shown below.
+
+.. _figure-mini-card:
+.. figure:: images/mini_card.*
+   :align: center
+   :alt: Mini Card slot diagram
+
+   Mini Card slot diagram
+
+Mini Card slot pinout:
+
+==== ========== ==== ==========
+Pin  Signal     Pin  Signal
+==== ========== ==== ==========
+1    ✗          2    VSUS33
+3    ✗          4    GND
+5    ✗          6    +1.5V
+7    ✗          8    USIM_VCC
+9    GND        10   USIM_DATA
+11   ✗          12   USIM_CLK
+13   ✗          14   USIM_RST
+15   GND        16   USIM_VPP
+17   ✗          18   GND
+19   ✗          20   -W_DISABLE_1
+21   GND        22   -PEX1_RST
+23   ✗          24   VSUS33
+25   ✗          26   GND
+27   GND        28   +1.5V
+29   GND        30   I2C0SCL
+31   ✗          32   I2C0SDA
+33   ✗          34   GND
+35   GND        36   USBHD_0-
+37   GND        38   USBHD_0+
+39   VSUS33     40   GND
+41   VSUS33     42   LED_WWAN1-
+43   GND        44   LED_WLAN1-
+45   ✗          46   LED_WPAN1-
+47   ✗          48   +1.5V
+49   ✗          50   GND
+51   ✗          52   VSUS33
+==== ========== ==== ==========
+
+
 4-Wire Resistive Touch Screen Connector
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+The mainboard is equipped with a touch screen connector for connecting the
+4-wire resistive touch panel. The touch screen connector is labeled as "TS1".
+The pinout of the connector is shown below.
+
+.. _figure-four-wire:
+.. figure:: images/four-wire.*
+   :align: center
+   :alt: 4-Wire Resistive Touch Screen connector diagram
+
+   4-Wire Resistive Touch Screen connector diagram
+
+4-Wire Resistive Touch Screen connector pinout:
+
+==== ==========
+Pin  Signal
+==== ==========
+1    TPXP
+2    TPYP
+3    TPXM
+4    TPYM
+==== ==========
 
 Key PAD Connector
 ~~~~~~~~~~~~~~~~~
 
+The mainboard is equipped with a Key PAD connector for connecting the
+keypad device. The connector is labeled as “KPAD1”. The pinout of the
+connector is shown below.
+
+.. _figure-key-pad:
+.. figure:: images/key_pad.*
+   :align: center
+   :alt: Key PAD Connector diagram
+
+   Key PAD Connector diagram
+
+Key PAD connector pinout:
+
+==== ==========
+Pin  Signal
+==== ==========
+1    VCC33
+2    KPADROW0
+3    KPADROW1
+4    KPADROW2
+5    KPADROW3
+6    KPADROW4
+7    GND
+==== ==========
 
 CIR Connector
 ~~~~~~~~~~~~~
 
+The mainboard provides a CIR (Consumer Infrared Receiver) connector on the
+top side of the board. The CIR connector is used to connect the infrared
+receiver module to enable infrared wireless interface. The pinout of the CIR
+connector is shown below.
+
+.. _figure-cir:
+.. figure:: images/cir.*
+   :align: center
+   :alt: CIR connector diagram
+
+   CIR connector diagram
+
+CIR connector pinout:
+
+==== ==========
+Pin  Signal
+==== ==========
+1    VSUS33
+2    GND
+3    CIR
+==== ==========
 
 DVO Connector
 ~~~~~~~~~~~~~
 
+The DVO (Digital Video Output) connector works as an interface for multidisplay
+devices. This connector allows the mainboad to connect an additional
+daughter card which is required for a certain display such as TTL or LVDS
+display. The DVO connector is labeled as “CN13”. The pinout of the
+connector is shown below.
 
+.. _figure-dvo:
+.. figure:: images/dvo.*
+   :align: center
+   :alt: DVO connector diagram
 
+   DVO connector diagram
+
+DVO connector pinout:
+
+==== =================== ==== ===================
+Pin  Signal              Pin  Signal
+==== =================== ==== ===================
+1    VCC33               26   LD15
+2    VCC33               27   GND
+3    VCC33               28   LD16
+4    5VIN                29   LD17
+5    5VIN                30   LD18
+6    5VIN                31   LD19
+7    VIN (DC-In/Battery) 32   LD20
+8    VIN (DC-In/Battery) 33   LD21
+9    GND                 34   LD22
+10   LD00                35   LD23
+11   LD01                36   GND
+12   LD02                37   DVP1CLK+
+13   LD03                38   GND
+14   LD04                39   DVPHS
+15   LD05                40   DVPVS
+16   LD06                41   DVPDE
+17   LD07                42   PWMOUT0
+18   GND                 43   TTL_RST
+19   LD08                44   I2C0SCL
+20   LD09                45   I2C0SDA
+21   LD10                46   DVO_CLK
+22   LD11                47   DVO_DATA
+23   LD12                48   LVDSENBL
+24   LD13                49   LVDSENVDD
+25   LD14                50   GND
+==== =================== ==== ===================
+
+.. warning::
+
+   Please DO NOT plug/unplug a DVO flex cable to /from a DVO connector (CN13) when
+   the system is powered-ON or running.
