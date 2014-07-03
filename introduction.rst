@@ -71,8 +71,8 @@ Battery Recycling and Disposal
 ------------------------------
 
 * Only use the appropriate battery specified for this product.
-*  Do not re-use, recharge, or reheat an old battery.
-*  Do not attempt to force open the battery.
+* Do not re-use, recharge, or reheat an old battery.
+* Do not attempt to force open the battery.
 * Do not discard used batteries with regular trash.
 * Discard used batteries according to local regulations.
 
