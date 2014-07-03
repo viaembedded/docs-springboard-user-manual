@@ -7,11 +7,18 @@ Introduction
 Copyright
 ---------
 
-Copyright © 2013 VIA Technologies Incorporated. All rights reserved.
+.. image:: images/cc_by.png
 
-No part of this document may be reproduced, transmitted, transcribed, stored in a retrieval system, or translated into any language,
-in any form or by any means, electronic, mechanical, magnetic, optical, chemical, manual or otherwise without the prior written
-permission of VIA Technologies, Incorporated.
+CC-BY-4.0 2013 VIA Technologies Incorporated.
+
+This document is released under the `Creative Commons Attribution 4.0 International`_ license. You are free to:
+
+* **Share** - copy and redistribute the material in any medium or format
+* **Adapt** - remix, transform, and build upon the material for any purpose, even commercially.
+
+The licensor cannot revoke these freedoms as long as you follow the license terms.
+
+.. _Creative Commons Attribution 4.0 International: https://creativecommons.org/licenses/by/4.0/
 
 Trademarks
 ----------
