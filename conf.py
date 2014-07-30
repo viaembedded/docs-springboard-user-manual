@@ -32,6 +32,7 @@ sys.path.append(os.path.abspath('extensions'))
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
     'numfig',
 ]
@@ -271,7 +272,7 @@ texinfo_documents = [
 epub_title = 'Springboard User Manual'
 epub_author = 'VIA'
 epub_publisher = 'VIA'
-epub_copyright = '2014, VIA'
+epub_copyright = 'CC-BY-4.0 2013 VIA'
 
 # The basename for the epub file. It defaults to the project name.
 #epub_basename = 'Springboard User Manual'
@@ -333,3 +334,7 @@ epub_exclude_files = ['search.html']
 
 # If false, no index is generated.
 #epub_use_index = True
+
+
+# Example configuration for intersphinx: refer to the Python standard library.
+intersphinx_mapping = {'http://docs.python.org/': None}
